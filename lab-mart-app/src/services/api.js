@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://https://lab-mart-api.vercel.app/api:5000/api',
+  baseURL: 'http://https://lab-mart-api.vercel.app/api',
 });
 
 api.interceptors.request.use((config) => {
