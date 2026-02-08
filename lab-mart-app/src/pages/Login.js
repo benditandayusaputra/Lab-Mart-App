@@ -10,7 +10,7 @@ const Login = () => {
     e.preventDefault();
     try {
       // Ganti URL ini dengan endpoint login dari API temanmu
-      const res = await axios.post('http://localhost:5000/api/auth/login', formData);
+      const res = await axios.post('https://lab-mart-api.vercel.app/api/auth/login', formData);
       
       localStorage.setItem('token', res.data.token);
       

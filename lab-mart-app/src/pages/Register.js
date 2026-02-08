@@ -10,7 +10,7 @@ const Register = () => {
     e.preventDefault();
     try {
       // Ganti URL ini dengan endpoint register dari API temanmu
-      await axios.post('http://localhost:5000/api/auth/register', formData);
+      await axios.post('https://lab-mart-api.vercel.app/api', formData);
       alert("Registrasi Berhasil! Silakan Login.");
       navigate('/login');
     } catch (err) {

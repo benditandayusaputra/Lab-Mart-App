@@ -7,7 +7,7 @@ const ProductList = () => {
   const [loading, setLoading] = useState(true);
 
   // Ganti URL ini dengan link Backend temenmu (misal dari Render/Railway)
-  const API_URL = 'http://localhost:5000/api/products';
+  const API_URL = 'https://lab-mart-api.vercel.app/api';
 
   useEffect(() => {
     const fetchProducts = async () => {
